@@ -20,3 +20,20 @@
                 if element == value:
                     return (i, j, k)
     return None
+
+  Step 1: Check that there is a mathching birthday for todays date. If there is no birthday then end the algorithm. If there is a birthday, go to step 2
+    Step 2: Store the name and phone number of the person in variables.
+    Step 3: Select a random message from the list
+    Step 4: Use the unusableChecker function to check if the message is available. If it is not available, go back to step 2. If it is available, go to step 5
+    Step 5: Complete the message with the name of the person
+    Step 6: pass the phone number and selected message to the sendMessage function
+    Step 7: Send the message :)
+
+
+    INITIAL IDEAS:
+
+    There has to be a while loop that checks for the existance of another person that has the same birthday as another one (or other many)
+
+The sendMessage function will need to cicle between the elements of commonBirthdays so that a message is sent to each person that has the same birthday
+
+ Unusable messages checker function (check that there are at most 4 messages in array, will contain the message selection functionality)
