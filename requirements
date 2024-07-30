@@ -1,0 +1,22 @@
+1: Must send custom whatsapps to a person´s phone number when it is their birthday
+
+2: There must be a list of 15 messages that cicle between each other every time a message is sent.
+  
+  a - Once a message is used, it must be disabled for the next 3 messages so there is no repetition. 
+    When a message is selected to use (after choosing it with a number randomizer) then that same number will be appended to the end of another array that will accumulate each message number until it has exactly three elements. When this happens, the array will be wipped clean. For this to work, the list must be checked each time the algorithm is ran. There will be a "while" loop that checks that the message element number is not in this list, and if it is it repeats the process. 
+    There must be a function that checks
+    b - There will be a blank space at the beginning of each message in which each persons name can be added to personalize it.
+
+3: A person must be stored with their name, whatsapp phone number and birthday date.
+
+  a - Maybe do a three dimensional array which has 12 elements in the first dimension (representing the month), and N amount of elements on the second dimension (representing each person whos birthday is that month), and thee elements for each element of the second dimension (representing the person´s name, day of the month, and whatsapp number)
+
+4: Must be able to check the current date and see if it matches with any persons birthday. (for loop that iterates over each element in the "person" array)
+
+  a - def find_position(array, value):
+    for i, two_d_array in enumerate(array):
+        for j, one_d_array in enumerate(two_d_array):
+            for k, element in enumerate(one_d_array):
+                if element == value:
+                    return (i, j, k)
+    return None
